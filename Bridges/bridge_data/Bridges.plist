@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Akashi Kaikyo Bridge</string>
+		<key>folderId</key>
+		<string>akashi</string>
+		<key>overview</key>
+		<string>A suspension bridge which links the city of Kobe on the Japanese mainland of Honshu to Iwaya on Awaji Island.</string>
+		<key>year</key>
+		<string>1998</string>
+		<key>latitude</key>
+		<real>34.616</real>
+		<key>longitude</key>
+		<real>135.02</real>
+		<key>length</key>
+		<integer>12831</integer>
+		<key>width</key>
+		<integer>73</integer>
+		<key>height</key>
+		<integer>928</integer>
+		<key>clearance_below</key>
+		<real>215.6</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Akashi_Kaikyo_Bridge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Infinity Bridge</string>
+		<key>folderId</key>
+		<string>infinity</string>
+		<key>overview</key>
+		<string>A public pedestrian and cycle footbridge across the River Tees in the borough of Stockton-on-Tees in the north-east of England.</string>
+		<key>year</key>
+		<string>2008</string>
+		<key>latitude</key>
+		<real>54.564794</real>
+		<key>longitude</key>
+		<real>-1.299192</real>
+		<key>length</key>
+		<integer>787</integer>
+		<key>width</key>
+		<integer>16</integer>
+		<key>height</key>
+		<integer>131</integer>
+		<key>clearance_below</key>
+		<integer>26</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Infinity_Bridge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Juscelino Kubitschek Bridge</string>
+		<key>folderId</key>
+		<string>jk</string>
+		<key>overview</key>
+		<string>A steel and concrete bridge crossing Lake Paranoá in Brasília, Brazil. Also called President JK Bridge or JK Bridge.</string>
+		<key>year</key>
+		<string>2002</string>
+		<key>latitude</key>
+		<real>-15.823611</real>
+		<key>longitude</key>
+		<real>-47.829444</real>
+		<key>length</key>
+		<real>3900</real>
+		<key>width</key>
+		<integer>79</integer>
+		<key>height</key>
+		<integer>200</integer>
+		<key>clearance_below</key>
+		<integer>59</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Juscelino_Kubitschek_bridge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>New River Gorge Bridge</string>
+		<key>folderId</key>
+		<string>new_river</string>
+		<key>overview</key>
+		<string>A steel arch bridge over the New River Gorge near Fayetteville, West Virginia, in the Appalachian Mountains of the eastern United States.</string>
+		<key>year</key>
+		<string>1977</string>
+		<key>latitude</key>
+		<real>38.068333</real>
+		<key>longitude</key>
+		<real>-81.083333</real>
+		<key>length</key>
+		<real>3030</real>
+		<key>width</key>
+		<real>69.3</real>
+		<key>height</key>
+		<integer>225</integer>
+		<key>clearance_below</key>
+		<integer>876</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/New_River_Gorge_Bridge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vasco de Gama Bridge</string>
+		<key>folderId</key>
+		<string>vasco</string>
+		<key>overview</key>
+		<string>A cable-stayed bridge flanked by viaducts and rangeviews that spans the Tagus River in Parque das Nações in Lisbon, the capital of Portugal.</string>
+		<key>year</key>
+		<string>1998</string>
+		<key>latitude</key>
+		<real>38.7589</real>
+		<key>longitude</key>
+		<real>-9.0387</real>
+		<key>length</key>
+		<real>40354</real>
+		<key>width</key>
+		<integer>98</integer>
+		<key>height</key>
+		<integer>509</integer>
+		<key>clearance_below</key>
+		<integer>148</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Vasco_da_Gama_Bridge</string>
+	</dict>
+</array>
+</plist>
