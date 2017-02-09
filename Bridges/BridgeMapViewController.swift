@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class BridgeMapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class BridgeMapViewController: UIViewController, CLLocationManagerDelegate {
   @IBOutlet weak var mapView: MKMapView!
   let locationManager = CLLocationManager()
   var bridges: [Bridge]!
