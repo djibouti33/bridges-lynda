@@ -399,7 +399,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="favorite" width="44" height="44"/>
-        <image name="favoriteEmpty" width="44" height="44"/>
+        <image name="favorite" width="30" height="30"/>
+        <image name="favoriteEmpty" width="30" height="30"/>
     </resources>
 </document>

@@ -13,6 +13,10 @@ class BridgeAnnotation: NSObject, MKAnnotation {
   var title: String?
   var coordinate: CLLocationCoordinate2D
   
+  override var description: String {
+    return "\(self.title!)"
+  }
+  
   init(withBridge bridge:Bridge) {
     title = bridge.name!
     coordinate = bridge.coordinate!
