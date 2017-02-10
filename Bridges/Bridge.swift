@@ -20,14 +20,36 @@ class Bridge: CustomStringConvertible {
   var width: Int?
   var height: Int?
   var clearance: Int?
-  
+
+  var isFavorite: Bool {
+    get {
+      if let dict = UserDefaults.standard.dictionary(forKey: "bridge_favorites"), let name = self.name {
+        return dict[name] != nil
+      }
+
+      return false
+    }
+
+    set {
+      if var dict = UserDefaults.standard.dictionary(forKey: "bridge_favorites"), let name = name {
+        if newValue == true {
+          dict[name] = true
+        } else {
+          dict.removeValue(forKey: name)
+        }
+
+        UserDefaults.standard.set(dict, forKey: "bridge_favorites")
+        UserDefaults.standard.synchronize()
+      }
+    }
+  }
+
   var description: String {
     return "\(self.name!)"
   }
   
   convenience init(withDictionary dictionary:[String:Any]) {
     self.init()
-    
     name = dictionary["name"] as? String
     overview = dictionary["overview"] as? String
     yearBuilt = dictionary["year"] as? String

@@ -18,7 +18,11 @@ class BridgeIndexTableViewController: UITableViewController {
     }
   }
 
-  // MARK: - Table view data source
+  override func viewWillAppear(_ animated: Bool) {
+    tableView.reloadData()
+  }
+
+  // MARK: - UITableViewDatasource
 
   override func numberOfSections(in tableView: UITableView) -> Int {
     return 1
@@ -31,14 +35,44 @@ class BridgeIndexTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "indexCell", for: indexPath) as! IndexTableViewCell
     cell.bridge = bridges[indexPath.row]
-    
+
     return cell
   }
   
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 105
   }
-  
+
+  override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    return true;
+  }
+
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    // no-op needed for editActions to work property
+  }
+
+  // MARK: - UITableViewDelegate
+
+  override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    let bridge = bridges[indexPath.row]
+    let title = bridge.isFavorite ? "Unfavorite" : "Favorite"
+
+    let favoriteAction = UITableViewRowAction(style: .normal, title: title) { (action, indexPath) in
+      bridge.isFavorite = !bridge.isFavorite
+      tableView.reloadData()
+    }
+    favoriteAction.backgroundColor = UIColor.red
+    return [favoriteAction]
+  }
+
+  override func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+    let cell = tableView.cellForRow(at: indexPath)
+
+    // in iOS 8+, cell's clipsToBounds turns to false when entering edit mode,
+    // so we need to turn it back on so our images stay cropped
+    cell?.contentView.clipsToBounds = true
+  }
+
   // MARK: - Navigation
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

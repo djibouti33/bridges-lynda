@@ -13,12 +13,14 @@ class IndexTableViewCell: UITableViewCell {
   @IBOutlet weak var bridgeNameLabel: UILabel!
   @IBOutlet weak var bridgeOverviewLabel: UILabel!
   @IBOutlet weak var textBackdrop: UIView!
+  @IBOutlet weak var favoriteImage: UIImageView!
 
   var bridge: Bridge? {
     didSet {
       bridgeImage.image = UIImage(contentsOfFile: (bridge?.imagePaths?.first)!)
       bridgeNameLabel.text = bridge?.name
       bridgeOverviewLabel.text = bridge?.overview
+      favoriteImage.isHidden = !(bridge?.isFavorite)!
     }
   }
   

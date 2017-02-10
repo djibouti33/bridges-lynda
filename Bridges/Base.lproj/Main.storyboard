@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -59,6 +60,13 @@
                                                 <constraint firstItem="naa-ds-XZ0" firstAttribute="top" secondItem="8tj-2F-C5J" secondAttribute="bottom" constant="15" id="uhV-O0-jrg"/>
                                             </constraints>
                                         </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="65U-Y6-1wm">
+                                            <rect key="frame" x="347" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="O2t-Bu-Mgq"/>
+                                                <constraint firstAttribute="width" constant="20" id="iS1-gs-grG"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="width" secondItem="21v-S6-QUD" secondAttribute="width" multiplier="0.85" id="HzW-8Z-ucQ"/>
@@ -67,7 +75,9 @@
                                         <constraint firstItem="hXd-EZ-awe" firstAttribute="centerY" secondItem="Jte-Gm-Bd4" secondAttribute="centerY" id="e1a-cg-BQm"/>
                                         <constraint firstItem="hXd-EZ-awe" firstAttribute="width" secondItem="Jte-Gm-Bd4" secondAttribute="width" multiplier="1.17647" id="l3o-sf-jxV"/>
                                         <constraint firstItem="hXd-EZ-awe" firstAttribute="centerX" secondItem="Jte-Gm-Bd4" secondAttribute="centerX" id="ntY-9l-jgS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="65U-Y6-1wm" secondAttribute="trailing" id="p9L-uB-UV6"/>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="height" secondItem="21v-S6-QUD" secondAttribute="height" multiplier="0.85" id="vY3-hY-prM"/>
+                                        <constraint firstAttribute="topMargin" secondItem="65U-Y6-1wm" secondAttribute="top" id="vZx-nl-WIq"/>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="centerX" secondItem="21v-S6-QUD" secondAttribute="centerX" id="zS1-Of-F6K"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -75,6 +85,7 @@
                                     <outlet property="bridgeImage" destination="hXd-EZ-awe" id="VQU-1L-2aL"/>
                                     <outlet property="bridgeNameLabel" destination="8tj-2F-C5J" id="em1-CU-cP7"/>
                                     <outlet property="bridgeOverviewLabel" destination="naa-ds-XZ0" id="Fxu-Xc-bGh"/>
+                                    <outlet property="favoriteImage" destination="65U-Y6-1wm" id="jn8-xe-v97"/>
                                     <outlet property="textBackdrop" destination="Jte-Gm-Bd4" id="db8-EM-F9D"/>
                                     <segue destination="rvD-Sd-ov4" kind="show" id="YSA-fB-6ZR"/>
                                 </connections>

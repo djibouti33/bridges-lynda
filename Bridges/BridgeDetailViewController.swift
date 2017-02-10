@@ -70,18 +70,8 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   }
 
   @IBAction func onFavorite(_ sender: UIButton) {
-    var dict = UserDefaults.standard.dictionary(forKey: "bridge_favorites")
-    
     sender.isSelected = !sender.isSelected
-    
-    if sender.isSelected {
-      dict?[(bridge?.name)!] = true
-    } else {
-      _ = dict?.removeValue(forKey: (bridge?.name)!)
-    }
-    
-    UserDefaults.standard.set(dict, forKey: "bridge_favorites")
-    UserDefaults.standard.synchronize()
+    bridge?.isFavorite = sender.isSelected
   }
   
   func onImageTap(sender: UITapGestureRecognizer) {
@@ -145,9 +135,8 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   }
   
   private func configureFavoriteButton() {
-    var dict = UserDefaults.standard.dictionary(forKey: "bridge_favorites")
-    if dict?[(bridge?.name)!] != nil {
-      favoriteButton.isSelected = true
+    if let bridge = bridge {
+      favoriteButton.isSelected = bridge.isFavorite
     } else {
       favoriteButton.isSelected = false
     }
