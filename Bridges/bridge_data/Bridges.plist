@@ -122,5 +122,77 @@
 		<key>url</key>
 		<string>https://en.wikipedia.org/wiki/Vasco_da_Gama_Bridge</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Great East Belt Bridge</string>
+		<key>folderId</key>
+		<string>great_east</string>
+		<key>overview</key>
+		<string>A multi-element fixed link crossing the Great Belt straight between the Danish islands of Zealand and Funen.</string>
+		<key>year</key>
+		<string>1998</string>
+		<key>latitude</key>
+		<real>55.341944</real>
+		<key>longitude</key>
+		<real>11.036111</real>
+		<key>length</key>
+		<real>22277</real>
+		<key>width</key>
+		<integer>102</integer>
+		<key>height</key>
+		<integer>833</integer>
+		<key>clearance_below</key>
+		<integer>213</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Great_Belt_Fixed_Link</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tatara Bridge</string>
+		<key>folderId</key>
+		<string>tatara</string>
+		<key>overview</key>
+		<string>A cable-stayed bridge that is part of the Nishiseto Expressway, commonly known as the Shimanami Kaidō しまなみ海道.</string>
+		<key>year</key>
+		<string>1999</string>
+		<key>latitude</key>
+		<real>34.259472</real>
+		<key>longitude</key>
+		<real>133.061528</real>
+		<key>length</key>
+		<integer>4856</integer>
+		<key>width</key>
+		<integer>100</integer>
+		<key>height</key>
+		<integer>722</integer>
+		<key>clearance_below</key>
+		<integer>85</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Tatara_Bridge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Øresund Bridge</string>
+		<key>folderId</key>
+		<string>oresund</string>
+		<key>overview</key>
+		<string>A combined railway and motorway bridge across the Øresund strait between Sweden and Denmark.</string>
+		<key>year</key>
+		<string>2000</string>
+		<key>latitude</key>
+		<real>34.259472</real>
+		<key>longitude</key>
+		<real>12.826944</real>
+		<key>length</key>
+		<integer>25738</integer>
+		<key>width</key>
+		<real>77.09999999999999</real>
+		<key>height</key>
+		<integer>669</integer>
+		<key>clearance_below</key>
+		<integer>187</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Oresund_Bridge</string>
+	</dict>
 </array>
 </plist>

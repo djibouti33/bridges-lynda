@@ -55,7 +55,7 @@ class BridgeIndexTableViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
     let bridge = bridges[indexPath.row]
-    let title = bridge.isFavorite ? "Unfavorite" : "Favorite"
+    let title = bridge.isFavorite ? NSLocalizedString("Unfavorite", comment: "") : NSLocalizedString("Favorite", comment: "")
 
     let favoriteAction = UITableViewRowAction(style: .normal, title: title) { (action, indexPath) in
       bridge.isFavorite = !bridge.isFavorite

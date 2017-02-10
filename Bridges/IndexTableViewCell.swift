@@ -17,10 +17,12 @@ class IndexTableViewCell: UITableViewCell {
 
   var bridge: Bridge? {
     didSet {
-      bridgeImage.image = UIImage(contentsOfFile: (bridge?.imagePaths?.first)!)
-      bridgeNameLabel.text = bridge?.name
-      bridgeOverviewLabel.text = bridge?.overview
-      favoriteImage.isHidden = !(bridge?.isFavorite)!
+      if let bridge = bridge {
+        bridgeImage.image = UIImage(contentsOfFile: (bridge.imagePaths?.first)!)
+        bridgeNameLabel.text = bridge.name
+        bridgeOverviewLabel.text = bridge.overview
+        favoriteImage.isHidden = !bridge.isFavorite
+      }
     }
   }
   

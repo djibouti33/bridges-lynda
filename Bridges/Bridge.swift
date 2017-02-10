@@ -50,8 +50,8 @@ class Bridge: CustomStringConvertible {
   
   convenience init(withDictionary dictionary:[String:Any]) {
     self.init()
-    name = dictionary["name"] as? String
-    overview = dictionary["overview"] as? String
+    name = NSLocalizedString(dictionary["name"] as! String, comment: "")
+    overview = NSLocalizedString(dictionary["overview"] as! String, comment: "")
     yearBuilt = dictionary["year"] as? String
     imagePaths = dictionary["imagePaths"] as? Array
     url = dictionary["url"] as? String

@@ -14,7 +14,7 @@ import UIKit
       let formatter = NumberFormatter()
       formatter.numberStyle = .decimal
       let num = NSNumber(integerLiteral: height)
-      heightPresentation = "\(formatter.string(from: num)!) ft"
+      heightPresentation = String.localizedStringWithFormat(NSLocalizedString("%@ ft", comment: ""), formatter.string(from: num)!)
     }
   }
   private var heightPresentation: String = "0 ft"
@@ -28,7 +28,7 @@ import UIKit
     
     //// "H" Text Drawing
     let headingRect = CGRect(x: 0, y: 0, width: 100, height: 58)
-    let headingTextContent = NSString(string: "H")
+    let headingTextContent = NSLocalizedString("H", comment: "")
     let headingStyle = NSMutableParagraphStyle()
     headingStyle.alignment = .center
     
