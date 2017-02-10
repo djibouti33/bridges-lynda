@@ -21,14 +21,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="indexCell" rowHeight="105" id="Sem-wn-775" customClass="IndexTableViewCell" customModule="Bridges" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="indexCell" rowHeight="105" id="Sem-wn-775" customClass="IndexTableViewCell" customModule="Bridges" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sem-wn-775" id="21v-S6-QUD">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Sem-wn-775" id="21v-S6-QUD">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="hXd-EZ-awe">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hXd-EZ-awe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Gm-Bd4">
@@ -70,10 +70,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="width" secondItem="21v-S6-QUD" secondAttribute="width" multiplier="0.85" id="HzW-8Z-ucQ"/>
-                                        <constraint firstItem="hXd-EZ-awe" firstAttribute="height" secondItem="Jte-Gm-Bd4" secondAttribute="height" multiplier="1.17647" priority="250" id="YXE-xu-uRK"/>
+                                        <constraint firstItem="hXd-EZ-awe" firstAttribute="width" secondItem="Jte-Gm-Bd4" secondAttribute="width" multiplier="1.1764" priority="250" id="ZRZ-bE-Pa7"/>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="centerY" secondItem="21v-S6-QUD" secondAttribute="centerY" id="bcn-QW-L0h"/>
                                         <constraint firstItem="hXd-EZ-awe" firstAttribute="centerY" secondItem="Jte-Gm-Bd4" secondAttribute="centerY" id="e1a-cg-BQm"/>
-                                        <constraint firstItem="hXd-EZ-awe" firstAttribute="width" secondItem="Jte-Gm-Bd4" secondAttribute="width" multiplier="1.17647" id="l3o-sf-jxV"/>
+                                        <constraint firstItem="hXd-EZ-awe" firstAttribute="height" secondItem="Jte-Gm-Bd4" secondAttribute="height" multiplier="1.1764" priority="250" id="izv-WB-qBM"/>
                                         <constraint firstItem="hXd-EZ-awe" firstAttribute="centerX" secondItem="Jte-Gm-Bd4" secondAttribute="centerX" id="ntY-9l-jgS"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="65U-Y6-1wm" secondAttribute="trailing" id="p9L-uB-UV6"/>
                                         <constraint firstItem="Jte-Gm-Bd4" firstAttribute="height" secondItem="21v-S6-QUD" secondAttribute="height" multiplier="0.85" id="vY3-hY-prM"/>
