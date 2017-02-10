@@ -278,7 +278,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovP-i2-vEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer">
                     <connections>
-                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="NTp-AG-vid"/>
+                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="faS-he-9yj"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
