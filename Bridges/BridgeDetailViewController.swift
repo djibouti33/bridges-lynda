@@ -28,24 +28,33 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    bridgeNameLabel.text = bridge?.name
-    bridgeOverviewLabel.text = bridge?.overview
-    lengthElevation.length = (bridge?.length)!
-    heightElevation.height = (bridge?.height)!
+
+    if let bridge = bridge {
+      bridgeNameLabel.text = bridge.name
+      bridgeOverviewLabel.text = bridge.overview
+
+      if let length = bridge.length {
+        lengthElevation.length = length
+      }
+
+      if let height = bridge.height {
+        heightElevation.height = height
+      }
+    }
+
     configureMapView()
     configureImageViews()
     configureFavoriteButton()
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    animateElevations()
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.navigationController?.delegate = self
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    animateElevations()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -111,6 +120,9 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   
   private func configureMapView() {
     mapView.delegate = self
+    if let bridge = bridge {
+      mapView.addAnnotation(BridgeAnnotation(withBridge: bridge))
+    }
   }
   
   private func setMapRegion() {

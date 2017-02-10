@@ -20,7 +20,7 @@ class ImageTransitionFromDetailToThumb: NSObject, UIViewControllerAnimatedTransi
 
   // MARK: - private helpers
   
-  func performMagicMove(using transitionContext: UIViewControllerContextTransitioning) {
+  private func performMagicMove(using transitionContext: UIViewControllerContextTransitioning) {
     let fromVC = transitionContext.viewController(forKey: .from) as! ImageDetailViewController
     let toVC = transitionContext.viewController(forKey: .to) as! BridgeDetailViewController
     let containerView = transitionContext.containerView
@@ -48,7 +48,7 @@ class ImageTransitionFromDetailToThumb: NSObject, UIViewControllerAnimatedTransi
       toVC.view.alpha = 1.0
       let frame = containerView.convert((endImageView?.frame)!, from: endImageView?.superview)
       mainSnapshot?.frame = frame
-    }) { (Bool) in
+    }) { (completed) in
       endImageView?.isHidden = false
       mainImageView?.isHidden = false
       mainSnapshot?.removeFromSuperview()
