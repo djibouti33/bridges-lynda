@@ -35,13 +35,13 @@
                                             <rect key="frame" x="28" y="8" width="319" height="89"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tj-2F-C5J">
-                                                    <rect key="frame" x="90.5" y="10" width="139" height="29"/>
+                                                    <rect key="frame" x="91" y="10" width="139" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naa-ds-XZ0">
-                                                    <rect key="frame" x="103.5" y="54" width="113" height="18"/>
+                                                    <rect key="frame" x="104" y="54" width="113" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -297,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-o2-0ma">
-                                <rect key="frame" x="0.0" y="294.5" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="295" width="375" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qX4-o2-0ma" secondAttribute="height" multiplier="15:8" id="WLk-AT-z46"/>
                                 </constraints>
