@@ -12,11 +12,11 @@
 		<key>year</key>
 		<string>1998</string>
 		<key>latitude</key>
-		<real>34.616</real>
+		<real>34.616862</real>
 		<key>longitude</key>
-		<real>135.02</real>
+		<real>135.021093</real>
 		<key>length</key>
-		<integer>12831</integer>
+		<real>12831</real>
 		<key>width</key>
 		<integer>73</integer>
 		<key>height</key>
@@ -180,11 +180,11 @@
 		<key>year</key>
 		<string>2000</string>
 		<key>latitude</key>
-		<real>34.259472</real>
+		<real>55.597262</real>
 		<key>longitude</key>
-		<real>12.826944</real>
+		<real>12.757273</real>
 		<key>length</key>
-		<integer>25738</integer>
+		<real>25738</real>
 		<key>width</key>
 		<real>77.09999999999999</real>
 		<key>height</key>
