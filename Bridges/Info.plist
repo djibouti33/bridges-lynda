@@ -43,5 +43,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Bridges would like to show your current location on a map.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RobotoMono-Bold.ttf</string>
+		<string>RobotoMono-Regular.ttf</string>
+	</array>
 </dict>
 </plist>
