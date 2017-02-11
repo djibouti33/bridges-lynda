@@ -60,7 +60,7 @@
                                                 <constraint firstItem="naa-ds-XZ0" firstAttribute="top" secondItem="8tj-2F-C5J" secondAttribute="bottom" constant="15" id="uhV-O0-jrg"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="65U-Y6-1wm">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav-sel-icon" translatesAutoresizingMaskIntoConstraints="NO" id="65U-Y6-1wm">
                                             <rect key="frame" x="347" y="8" width="20" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="O2t-Bu-Mgq"/>
@@ -252,8 +252,8 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MsC-ah-2DF">
                                 <rect key="frame" x="329" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="favoriteEmpty"/>
-                                <state key="selected" image="favorite"/>
+                                <state key="normal" image="fav-unsel-icon"/>
+                                <state key="selected" image="fav-sel-icon"/>
                                 <connections>
                                     <action selector="onFavorite:" destination="rvD-Sd-ov4" eventType="touchUpInside" id="e9C-le-BIa"/>
                                 </connections>
@@ -410,7 +410,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="favorite" width="30" height="30"/>
-        <image name="favoriteEmpty" width="30" height="30"/>
+        <image name="fav-sel-icon" width="30" height="30"/>
+        <image name="fav-unsel-icon" width="30" height="30"/>
     </resources>
 </document>
