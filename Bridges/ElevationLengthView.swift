@@ -59,7 +59,7 @@ import UIKit
 
     let robotoMono = UIFont(name: "RobotoMono-Regular", size: 15)
     
-    let textFontAttributes = [NSFontAttributeName: robotoMono, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
+    let textFontAttributes = [NSFontAttributeName: robotoMono!, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
     
     let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
     context!.saveGState()
