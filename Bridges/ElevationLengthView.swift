@@ -53,7 +53,7 @@ import UIKit
     
     //// "x ft" Drawing
     let textRect = CGRect(x: 0, y: 71.54, width: 100, height: 28.46)
-    let textTextContent = NSString(string: lengthPresentation)
+    let textContent = NSString(string: lengthPresentation)
     let textStyle = NSMutableParagraphStyle()
     textStyle.alignment = .center
 
@@ -61,10 +61,10 @@ import UIKit
     
     let textFontAttributes = [NSFontAttributeName: robotoMono!, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
     
-    let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
+    let textTextHeight: CGFloat = textContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
     context!.saveGState()
     context!.clip(to: textRect)
-    textTextContent.draw(in: CGRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight), withAttributes: textFontAttributes)
+    textContent.draw(in: CGRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight), withAttributes: textFontAttributes)
     context!.restoreGState()
   }
 }

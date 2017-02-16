@@ -28,6 +28,30 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Great East Belt Bridge</string>
+		<key>folderId</key>
+		<string>great_east</string>
+		<key>overview</key>
+		<string>A multi-element fixed link crossing the Great Belt straight between the Danish islands of Zealand and Funen.</string>
+		<key>year</key>
+		<string>1998</string>
+		<key>latitude</key>
+		<real>55.341944</real>
+		<key>longitude</key>
+		<real>11.036111</real>
+		<key>length</key>
+		<real>22277</real>
+		<key>width</key>
+		<integer>102</integer>
+		<key>height</key>
+		<integer>833</integer>
+		<key>clearance_below</key>
+		<integer>213</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Great_Belt_Fixed_Link</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Infinity Bridge</string>
 		<key>folderId</key>
 		<string>infinity</string>
@@ -100,51 +124,27 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Vasco de Gama Bridge</string>
+		<string>Øresund Bridge</string>
 		<key>folderId</key>
-		<string>vasco</string>
+		<string>oresund</string>
 		<key>overview</key>
-		<string>A cable-stayed bridge flanked by viaducts and rangeviews that spans the Tagus River in Parque das Nações in Lisbon, the capital of Portugal.</string>
+		<string>A combined railway and motorway bridge across the Øresund strait between Sweden and Denmark.</string>
 		<key>year</key>
-		<string>1998</string>
+		<string>2000</string>
 		<key>latitude</key>
-		<real>38.7589</real>
+		<real>55.597262</real>
 		<key>longitude</key>
-		<real>-9.0387</real>
+		<real>12.757273</real>
 		<key>length</key>
-		<real>40354</real>
+		<real>25738</real>
 		<key>width</key>
-		<integer>98</integer>
+		<real>77.09999999999999</real>
 		<key>height</key>
-		<integer>509</integer>
+		<integer>669</integer>
 		<key>clearance_below</key>
-		<integer>148</integer>
+		<integer>187</integer>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Vasco_da_Gama_Bridge</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Great East Belt Bridge</string>
-		<key>folderId</key>
-		<string>great_east</string>
-		<key>overview</key>
-		<string>A multi-element fixed link crossing the Great Belt straight between the Danish islands of Zealand and Funen.</string>
-		<key>year</key>
-		<string>1998</string>
-		<key>latitude</key>
-		<real>55.341944</real>
-		<key>longitude</key>
-		<real>11.036111</real>
-		<key>length</key>
-		<real>22277</real>
-		<key>width</key>
-		<integer>102</integer>
-		<key>height</key>
-		<integer>833</integer>
-		<key>clearance_below</key>
-		<integer>213</integer>
-		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Great_Belt_Fixed_Link</string>
+		<string>https://en.wikipedia.org/wiki/Oresund_Bridge</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -172,27 +172,27 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Øresund Bridge</string>
+		<string>Vasco de Gama Bridge</string>
 		<key>folderId</key>
-		<string>oresund</string>
+		<string>vasco</string>
 		<key>overview</key>
-		<string>A combined railway and motorway bridge across the Øresund strait between Sweden and Denmark.</string>
+		<string>A cable-stayed bridge flanked by viaducts and rangeviews that spans the Tagus River in Parque das Nações in Lisbon, the capital of Portugal.</string>
 		<key>year</key>
-		<string>2000</string>
+		<string>1998</string>
 		<key>latitude</key>
-		<real>55.597262</real>
+		<real>38.7589</real>
 		<key>longitude</key>
-		<real>12.757273</real>
+		<real>-9.0387</real>
 		<key>length</key>
-		<real>25738</real>
+		<real>40354</real>
 		<key>width</key>
-		<real>77.09999999999999</real>
+		<integer>98</integer>
 		<key>height</key>
-		<integer>669</integer>
+		<integer>509</integer>
 		<key>clearance_below</key>
-		<integer>187</integer>
+		<integer>148</integer>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Oresund_Bridge</string>
+		<string>https://en.wikipedia.org/wiki/Vasco_da_Gama_Bridge</string>
 	</dict>
 </array>
 </plist>

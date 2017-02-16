@@ -123,7 +123,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="789"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ou-dI-NSv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="713.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="714"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liH-9c-LpG">
                                                 <rect key="frame" x="8" y="8" width="359" height="29"/>
@@ -137,34 +137,6 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iao-v6-qgi" customClass="ElevationLengthView" customModule="Bridges" customModuleProvider="target">
-                                                <rect key="frame" x="44" y="104" width="100" height="100"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="2cV-z1-mPQ"/>
-                                                    <constraint firstAttribute="width" constant="100" id="Ega-ZK-Kls"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="length">
-                                                        <integer key="value" value="3000"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-FD-37o" customClass="ElevationHeightView" customModule="Bridges" customModuleProvider="target">
-                                                <rect key="frame" x="231.5" y="104" width="100" height="100"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
-                                                        <integer key="value" value="374"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-4g-TUE">
-                                                <rect key="frame" x="0.0" y="242" width="375" height="259"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="259" id="0vg-7w-S9M"/>
-                                                </constraints>
-                                            </mapView>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View on Wikipedia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obL-J1-SAg">
                                                 <rect key="frame" x="8" y="75" width="118" height="17"/>
                                                 <gestureRecognizers/>
@@ -175,19 +147,66 @@
                                                     <outletCollection property="gestureRecognizers" destination="yBz-iT-Uxr" appends="YES" id="6Ar-NM-47S"/>
                                                 </connections>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnY-3v-W65" userLabel="ElevationWrapper" customClass="ElevationWrapper" customModule="Bridges" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="375" height="124"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iao-v6-qgi" customClass="ElevationLengthView" customModule="Bridges" customModuleProvider="target">
+                                                        <rect key="frame" x="45" y="20" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="2cV-z1-mPQ"/>
+                                                            <constraint firstAttribute="width" constant="100" id="Ega-ZK-Kls"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="length">
+                                                                <integer key="value" value="3000"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-FD-37o" customClass="ElevationHeightView" customModule="Bridges" customModuleProvider="target">
+                                                        <rect key="frame" x="231.5" y="20" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                                <integer key="value" value="374"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Iao-v6-qgi" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="top" constant="20" id="B1t-Th-iIX"/>
+                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="top" secondItem="Iao-v6-qgi" secondAttribute="top" id="Bus-Hj-dzC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Iao-v6-qgi" secondAttribute="bottom" constant="4" id="JRa-GL-JbV"/>
+                                                    <constraint firstItem="Iao-v6-qgi" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="0.5" constant="1" id="JUf-g2-GHf"/>
+                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="height" secondItem="Iao-v6-qgi" secondAttribute="height" id="cXM-6y-qR0"/>
+                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="1.5" id="cjb-lx-RD5"/>
+                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="width" secondItem="Iao-v6-qgi" secondAttribute="width" id="vP8-7T-UkC"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="heightElevation" destination="Pe0-FD-37o" id="t3C-Bb-yaX"/>
+                                                    <outlet property="lengthElevation" destination="Iao-v6-qgi" id="yJ0-RG-D89"/>
+                                                </connections>
+                                            </view>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-4g-TUE">
+                                                <rect key="frame" x="0.0" y="242" width="375" height="259"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="259" id="0vg-7w-S9M"/>
+                                                </constraints>
+                                            </mapView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cC1-Xi-TBg">
-                                                <rect key="frame" x="9" y="551" width="113" height="112.5"/>
+                                                <rect key="frame" x="9" y="551" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="height" multiplier="1:1" id="A0k-U7-PHg"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-ic-Hsf">
-                                                <rect key="frame" x="131.5" y="551" width="112.5" height="112.5"/>
+                                                <rect key="frame" x="131.5" y="551" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GcC-sJ-ha0">
-                                                <rect key="frame" x="253" y="551" width="112.5" height="112.5"/>
+                                                <rect key="frame" x="253" y="551" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
@@ -197,31 +216,28 @@
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="top" secondItem="cC1-Xi-TBg" secondAttribute="top" id="8mc-o6-flC"/>
                                             <constraint firstItem="Yob-4g-TUE" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" id="APD-LM-HV9"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="height" secondItem="cC1-Xi-TBg" secondAttribute="height" id="AkR-aA-Z3K"/>
-                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="width" secondItem="Iao-v6-qgi" secondAttribute="width" id="FCe-0r-QOl"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="top" secondItem="Yob-4g-TUE" secondAttribute="bottom" constant="50" id="Gi7-RY-Mqf"/>
                                             <constraint firstItem="liH-9c-LpG" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" constant="8" id="M7x-e6-8UA"/>
                                             <constraint firstItem="liH-9c-LpG" firstAttribute="top" secondItem="3Ou-dI-NSv" secondAttribute="top" constant="8" id="Mgl-FF-HXt"/>
-                                            <constraint firstItem="Iao-v6-qgi" firstAttribute="top" secondItem="obL-J1-SAg" secondAttribute="bottom" constant="12" id="RJx-2X-WUS"/>
+                                            <constraint firstItem="pnY-3v-W65" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" id="Pcp-5B-jan"/>
                                             <constraint firstAttribute="trailing" secondItem="gVE-MO-sMe" secondAttribute="trailing" constant="8" id="Rh8-bb-qsC"/>
                                             <constraint firstAttribute="bottom" secondItem="cC1-Xi-TBg" secondAttribute="bottom" constant="50" id="Syk-Xm-vuB"/>
                                             <constraint firstItem="obL-J1-SAg" firstAttribute="leading" secondItem="gVE-MO-sMe" secondAttribute="leading" id="TX5-Tr-O8m"/>
                                             <constraint firstItem="obL-J1-SAg" firstAttribute="top" secondItem="gVE-MO-sMe" secondAttribute="bottom" constant="9" id="VNf-ob-egn"/>
-                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="height" secondItem="Iao-v6-qgi" secondAttribute="height" id="d85-rm-ox1"/>
+                                            <constraint firstItem="pnY-3v-W65" firstAttribute="top" secondItem="obL-J1-SAg" secondAttribute="bottom" constant="8" id="Z2e-Mi-3Il"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="width" id="eQ2-lu-MoT"/>
-                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="1.5" id="edR-CE-PvN"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="0.35" id="ezd-r6-932"/>
                                             <constraint firstAttribute="trailing" secondItem="Yob-4g-TUE" secondAttribute="trailing" id="fRa-5X-nxB"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="width" secondItem="3Ou-dI-NSv" secondAttribute="width" multiplier="0.3" id="gzh-lX-H6b"/>
+                                            <constraint firstItem="Yob-4g-TUE" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="bottom" constant="18" id="hqr-Eu-T7r"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="top" secondItem="cC1-Xi-TBg" secondAttribute="top" id="j9L-YT-5Km"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" id="kX9-cb-er2"/>
+                                            <constraint firstAttribute="trailing" secondItem="pnY-3v-W65" secondAttribute="trailing" id="llD-Fe-THK"/>
                                             <constraint firstAttribute="trailing" secondItem="liH-9c-LpG" secondAttribute="trailing" constant="8" id="mDA-oD-ElJ"/>
                                             <constraint firstItem="gVE-MO-sMe" firstAttribute="leading" secondItem="liH-9c-LpG" secondAttribute="leading" id="n8q-qh-cN7"/>
-                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="top" secondItem="Iao-v6-qgi" secondAttribute="top" id="pmT-vX-iTf"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="1.65" id="sXN-ps-swA"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="height" secondItem="cC1-Xi-TBg" secondAttribute="height" id="tkA-Xk-GEg"/>
-                                            <constraint firstItem="Yob-4g-TUE" firstAttribute="top" secondItem="Iao-v6-qgi" secondAttribute="bottom" constant="38" id="uyo-1r-Fed"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="width" id="xbh-q1-ILS"/>
-                                            <constraint firstItem="Iao-v6-qgi" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="0.5" id="xzW-D1-6uM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -323,8 +339,8 @@
         <scene sceneID="JyZ-Xo-JBP">
             <objects>
                 <navigationController id="PJX-LF-68i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bridges" id="E9U-5a-xad"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B40-1b-Mon">
+                    <tabBarItem key="tabBarItem" title="Bridges" image="bridge" id="E9U-5a-xad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B40-1b-Mon">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -340,8 +356,8 @@
         <scene sceneID="eSq-fx-TDK">
             <objects>
                 <navigationController id="Yun-EP-xDb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="gDL-uT-rox"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Of-hV-8yO">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="gDL-uT-rox"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Of-hV-8yO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -410,7 +426,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bridge" width="30" height="30"/>
         <image name="fav-sel-icon" width="30" height="30"/>
         <image name="fav-unsel-icon" width="30" height="30"/>
+        <image name="map" width="30" height="30"/>
     </resources>
 </document>

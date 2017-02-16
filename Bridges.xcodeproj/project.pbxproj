@@ -11,6 +11,7 @@
 		0A2CAD481E4FA8D400345922 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CAD3E1E4FA8D400345922 /* RobotoMono-Regular.ttf */; };
 		0A51A8981E42A9990079E983 /* ElevationLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A8971E42A9990079E983 /* ElevationLengthView.swift */; };
 		0A51A89A1E42B8FC0079E983 /* ElevationHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A8991E42B8FC0079E983 /* ElevationHeightView.swift */; };
+		0A8EA4581E553F0B0037BE65 /* ElevationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EA4571E553F0B0037BE65 /* ElevationWrapper.swift */; };
 		0AD31EBA1E40F3CF0097133F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD31EB91E40F3CF0097133F /* AppDelegate.swift */; };
 		0AD31EBF1E40F3CF0097133F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD31EBD1E40F3CF0097133F /* Main.storyboard */; };
 		0AD31EC11E40F3CF0097133F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD31EC01E40F3CF0097133F /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		0A2CAD3E1E4FA8D400345922 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		0A51A8971E42A9990079E983 /* ElevationLengthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationLengthView.swift; sourceTree = "<group>"; };
 		0A51A8991E42B8FC0079E983 /* ElevationHeightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationHeightView.swift; sourceTree = "<group>"; };
+		0A8EA4571E553F0B0037BE65 /* ElevationWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationWrapper.swift; sourceTree = "<group>"; };
 		0AD31EB61E40F3CF0097133F /* Bridges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bridges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD31EB91E40F3CF0097133F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD31EBE1E40F3CF0097133F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,12 +98,13 @@
 				0ADC25971E4A12A9008C9ABA /* BridgeMapViewController.swift */,
 				0A51A8991E42B8FC0079E983 /* ElevationHeightView.swift */,
 				0A51A8971E42A9990079E983 /* ElevationLengthView.swift */,
+				0A8EA4571E553F0B0037BE65 /* ElevationWrapper.swift */,
+				0ADC259C1E4A1BC6008C9ABA /* Extra Files */,
 				0ADC258F1E4914F8008C9ABA /* ImageDetailViewController.swift */,
 				0ADC25951E494DFE008C9ABA /* ImageTransitionFromDetailToThumb.swift */,
 				0ADC25911E491D0A008C9ABA /* ImageTransitionFromThumbToDetail.swift */,
 				0AD31F191E4129DD0097133F /* IndexTableViewCell.swift */,
 				0AD31EBD1E40F3CF0097133F /* Main.storyboard */,
-				0ADC259C1E4A1BC6008C9ABA /* Extra Files */,
 			);
 			path = Bridges;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				0AD31ED81E4122270097133F /* BridgeIndexTableViewController.swift in Sources */,
 				0ADC25921E491D0A008C9ABA /* ImageTransitionFromThumbToDetail.swift in Sources */,
 				0AD31EBA1E40F3CF0097133F /* AppDelegate.swift in Sources */,
+				0A8EA4581E553F0B0037BE65 /* ElevationWrapper.swift in Sources */,
 				0AD31F1A1E4129DD0097133F /* IndexTableViewCell.swift in Sources */,
 				0A51A8981E42A9990079E983 /* ElevationLengthView.swift in Sources */,
 				0AD31F201E4138520097133F /* BridgeDetailViewController.swift in Sources */,
