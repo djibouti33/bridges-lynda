@@ -188,7 +188,7 @@
                                                         <color key="textColor" red="0.069498517888648248" green="0.23181677450878002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                         <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="yBz-iT-Uxr" appends="YES" id="06b-5M-FJu"/>
+                                                            <outletCollection property="gestureRecognizers" destination="yBz-iT-Uxr" appends="YES" id="8Ik-MR-Zfg"/>
                                                         </connections>
                                                     </label>
                                                 </subviews>
@@ -308,11 +308,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovP-i2-vEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer">
-                    <connections>
-                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="30W-Ne-J9I"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer"/>
             </objects>
             <point key="canvasLocation" x="2709.5999999999999" y="-276.61169415292358"/>
         </scene>
@@ -356,8 +352,6 @@
             <objects>
                 <navigationController id="PJX-LF-68i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bridges" image="bridge" id="E9U-5a-xad"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B40-1b-Mon">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -375,8 +369,6 @@
             <objects>
                 <navigationController id="Yun-EP-xDb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="gDL-uT-rox"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Of-hV-8yO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
