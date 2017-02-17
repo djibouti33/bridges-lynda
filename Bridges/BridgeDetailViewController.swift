@@ -13,11 +13,10 @@ import SafariServices
 class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigationControllerDelegate {
   @IBOutlet weak var bridgeNameLabel: UILabel!
   @IBOutlet weak var bridgeOverviewLabel: UILabel!
-  @IBOutlet weak var lengthElevation: ElevationLengthView!
-  @IBOutlet weak var heightElevation: ElevationHeightView!
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet var imageCollection: [UIImageView]!
   @IBOutlet weak var favoriteButton: UIButton!
+  @IBOutlet weak var elevationWrapper: ElevationWrapper!
 
   var bridge: Bridge?
   var currentIndex = 0
@@ -32,24 +31,12 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
     if let bridge = bridge {
       bridgeNameLabel.text = bridge.name
       bridgeOverviewLabel.text = bridge.overview
-
-      if let length = bridge.length {
-        lengthElevation.length = length
-      }
-
-      if let height = bridge.height {
-        heightElevation.height = height
-      }
+      elevationWrapper.bridge = bridge
     }
 
     configureMapView()
     configureImageViews()
     configureFavoriteButton()
-  }
-
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    animateElevations()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -105,18 +92,6 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   }
   
   // MARK: - Private Helpers
-  
-  private func animateElevations() {
-    UIView.animate(withDuration: 0.5, animations: {
-      self.lengthElevation.transform = CGAffineTransform(scaleX: 1.5,y: 1.5)
-      self.heightElevation.transform = CGAffineTransform(scaleX: 1.5,y: 1.5)
-    }) { (Bool) in
-      UIView.animate(withDuration: 0.5, animations: {
-        self.lengthElevation.transform = CGAffineTransform.identity
-        self.heightElevation.transform = CGAffineTransform.identity
-      })
-    }
-  }
   
   private func configureMapView() {
     mapView.delegate = self

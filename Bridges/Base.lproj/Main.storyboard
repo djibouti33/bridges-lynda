@@ -184,8 +184,8 @@
                                                     <constraint firstItem="Pe0-FD-37o" firstAttribute="width" secondItem="Iao-v6-qgi" secondAttribute="width" id="vP8-7T-UkC"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outlet property="heightElevation" destination="Pe0-FD-37o" id="t3C-Bb-yaX"/>
-                                                    <outlet property="lengthElevation" destination="Iao-v6-qgi" id="yJ0-RG-D89"/>
+                                                    <outlet property="heightElevation" destination="Pe0-FD-37o" id="iny-Qc-Cjw"/>
+                                                    <outlet property="lengthElevation" destination="Iao-v6-qgi" id="MRq-fd-kor"/>
                                                 </connections>
                                             </view>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-4g-TUE">
@@ -281,9 +281,8 @@
                     <connections>
                         <outlet property="bridgeNameLabel" destination="liH-9c-LpG" id="c0d-8T-qqT"/>
                         <outlet property="bridgeOverviewLabel" destination="gVE-MO-sMe" id="zaa-Nl-TSf"/>
+                        <outlet property="elevationWrapper" destination="pnY-3v-W65" id="jVn-9b-CS2"/>
                         <outlet property="favoriteButton" destination="MsC-ah-2DF" id="jQN-vN-vdg"/>
-                        <outlet property="heightElevation" destination="Pe0-FD-37o" id="2Hg-8I-ylD"/>
-                        <outlet property="lengthElevation" destination="Iao-v6-qgi" id="MRb-9d-NcL"/>
                         <outlet property="mapView" destination="Yob-4g-TUE" id="fpJ-hK-CwR"/>
                         <outletCollection property="imageCollection" destination="cC1-Xi-TBg" collectionClass="NSMutableArray" id="hGD-wd-8Xj"/>
                         <outletCollection property="imageCollection" destination="8tg-ic-Hsf" collectionClass="NSMutableArray" id="k4q-jK-PWO"/>
