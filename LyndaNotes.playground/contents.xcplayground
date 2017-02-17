@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Table of Contents'/>
+        <page name='Dynamic Type'/>
+        <page name='Dynamic Type - UITableViewCell'/>
+        <page name='Reduce Motion'/>
+        <page name='Reduce Transparency'/>
+        <page name='Bold Fonts &amp; Darker Colors'/>
+        <page name='Guided Access'/>
+        <page name='VoiceOver Rotor'/>
+        <page name='Custom Actions'/>
+    </pages>
+</playground>
