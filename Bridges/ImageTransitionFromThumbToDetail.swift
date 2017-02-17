@@ -26,7 +26,7 @@ class ImageTransitionFromThumbToDetail: NSObject, UIViewControllerAnimatedTransi
     let containerView = transitionContext.containerView
     
     let tappedImageView = fromVC.imageCollection.filter { (imageView) -> Bool in
-      imageView.tag == fromVC.currentIndex
+      imageView.tag == fromVC.currentImageIndex
     }.first
     
     let tappedSnapshot = tappedImageView?.snapshotView()

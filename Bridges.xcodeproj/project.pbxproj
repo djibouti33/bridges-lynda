@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A15C26B1E579EC70037C4B1 /* DetailWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15C26A1E579EC70037C4B1 /* DetailWrapper.swift */; };
 		0A2CAD411E4FA8D400345922 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CAD371E4FA8D400345922 /* RobotoMono-Bold.ttf */; };
 		0A2CAD481E4FA8D400345922 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2CAD3E1E4FA8D400345922 /* RobotoMono-Regular.ttf */; };
 		0A51A8981E42A9990079E983 /* ElevationLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A51A8971E42A9990079E983 /* ElevationLengthView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A15C26A1E579EC70037C4B1 /* DetailWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWrapper.swift; sourceTree = "<group>"; };
 		0A2CAD371E4FA8D400345922 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		0A2CAD3E1E4FA8D400345922 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		0A51A8971E42A9990079E983 /* ElevationLengthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationLengthView.swift; sourceTree = "<group>"; };
@@ -93,9 +95,12 @@
 		0AD31EB81E40F3CF0097133F /* Bridges */ = {
 			isa = PBXGroup;
 			children = (
+				0AD31EB91E40F3CF0097133F /* AppDelegate.swift */,
+				0AD31ECB1E40F9180097133F /* Bridge.swift */,
 				0AD31F1F1E4138520097133F /* BridgeDetailViewController.swift */,
 				0AD31ED71E4122270097133F /* BridgeIndexTableViewController.swift */,
 				0ADC25971E4A12A9008C9ABA /* BridgeMapViewController.swift */,
+				0A15C26A1E579EC70037C4B1 /* DetailWrapper.swift */,
 				0A51A8991E42B8FC0079E983 /* ElevationHeightView.swift */,
 				0A51A8971E42A9990079E983 /* ElevationLengthView.swift */,
 				0A8EA4571E553F0B0037BE65 /* ElevationWrapper.swift */,
@@ -115,8 +120,6 @@
 				0A2CAD361E4FA8C200345922 /* fonts */,
 				0AD31EC01E40F3CF0097133F /* Assets.xcassets */,
 				0AD31ED51E41140B0097133F /* bridge_data */,
-				0AD31EB91E40F3CF0097133F /* AppDelegate.swift */,
-				0AD31ECB1E40F9180097133F /* Bridge.swift */,
 				0AD31EC51E40F3CF0097133F /* Info.plist */,
 				0AD31EC21E40F3CF0097133F /* LaunchScreen.storyboard */,
 				0ADC25931E494287008C9ABA /* UIView+Snapshot.swift */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD31ED81E4122270097133F /* BridgeIndexTableViewController.swift in Sources */,
+				0A15C26B1E579EC70037C4B1 /* DetailWrapper.swift in Sources */,
 				0ADC25921E491D0A008C9ABA /* ImageTransitionFromThumbToDetail.swift in Sources */,
 				0AD31EBA1E40F3CF0097133F /* AppDelegate.swift in Sources */,
 				0A8EA4581E553F0B0037BE65 /* ElevationWrapper.swift in Sources */,

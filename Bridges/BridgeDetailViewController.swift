@@ -11,27 +11,19 @@ import MapKit
 import SafariServices
 
 class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigationControllerDelegate {
-  @IBOutlet weak var bridgeNameLabel: UILabel!
-  @IBOutlet weak var bridgeOverviewLabel: UILabel!
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet var imageCollection: [UIImageView]!
   @IBOutlet weak var favoriteButton: UIButton!
-  @IBOutlet weak var elevationWrapper: ElevationWrapper!
+  @IBOutlet weak var detailWrapper: DetailWrapper!
 
   var bridge: Bridge?
-  var currentIndex = 0
-  
-  required init?(coder aDecoder: NSCoder) {
-      super.init(coder: aDecoder)
-  }
+  var currentImageIndex = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
     if let bridge = bridge {
-      bridgeNameLabel.text = bridge.name
-      bridgeOverviewLabel.text = bridge.overview
-      elevationWrapper.bridge = bridge
+      detailWrapper.bridge = bridge
     }
 
     configureMapView()
@@ -52,7 +44,7 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "imageDetailSegue" {
       let imageDetail = segue.destination as! ImageDetailViewController
-      imageDetail.imagePath = (bridge?.imagePaths?[currentIndex])!
+      imageDetail.imagePath = (bridge?.imagePaths?[currentImageIndex])!
     }
   }
   
@@ -66,12 +58,12 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
   }
 
   @IBAction func onFavorite(_ sender: UIButton) {
-    sender.isSelected = !sender.isSelected
-    bridge?.isFavorite = sender.isSelected
+    bridge?.isFavorite = !sender.isSelected
+    configureFavoriteButton()
   }
   
   func onImageTap(sender: UITapGestureRecognizer) {
-    currentIndex = (sender.view?.tag)!
+    currentImageIndex = (sender.view?.tag)!
     self.performSegue(withIdentifier: "imageDetailSegue", sender: self)
   }
   

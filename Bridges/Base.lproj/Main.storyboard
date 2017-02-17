@@ -123,120 +123,139 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="789"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ou-dI-NSv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="714"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="712"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liH-9c-LpG">
-                                                <rect key="frame" x="8" y="8" width="359" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVE-MO-sMe">
-                                                <rect key="frame" x="8" y="45" width="359" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View on Wikipedia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obL-J1-SAg">
-                                                <rect key="frame" x="8" y="75" width="118" height="17"/>
-                                                <gestureRecognizers/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" red="0.069498517888648248" green="0.23181677450878002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="yBz-iT-Uxr" appends="YES" id="6Ar-NM-47S"/>
-                                                </connections>
-                                            </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnY-3v-W65" userLabel="ElevationWrapper" customClass="ElevationWrapper" customModule="Bridges" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="100" width="375" height="124"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK2-bh-djG" userLabel="DetailsWrapper" customClass="DetailWrapper" customModule="Bridges" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iao-v6-qgi" customClass="ElevationLengthView" customModule="Bridges" customModuleProvider="target">
-                                                        <rect key="frame" x="45" y="20" width="100" height="100"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liH-9c-LpG">
+                                                        <rect key="frame" x="8" y="8" width="139" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bridge Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVE-MO-sMe">
+                                                        <rect key="frame" x="8" y="45" width="126" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnY-3v-W65" userLabel="ElevationWrapper" customClass="ElevationWrapper" customModule="Bridges" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="104" width="375" height="124"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iao-v6-qgi" customClass="ElevationLengthView" customModule="Bridges" customModuleProvider="target">
+                                                                <rect key="frame" x="44" y="12" width="100" height="100"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="ukL-zV-Yho"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="yrU-Sb-dag"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="length">
+                                                                        <integer key="value" value="3000"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-FD-37o" customClass="ElevationHeightView" customModule="Bridges" customModuleProvider="target">
+                                                                <rect key="frame" x="231.5" y="12" width="100" height="100"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                                        <integer key="value" value="374"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="2cV-z1-mPQ"/>
-                                                            <constraint firstAttribute="width" constant="100" id="Ega-ZK-Kls"/>
+                                                            <constraint firstItem="Iao-v6-qgi" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="0.5" id="Hwx-bb-qiu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Iao-v6-qgi" secondAttribute="bottom" constant="12" id="JRa-GL-JbV"/>
+                                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="width" secondItem="Iao-v6-qgi" secondAttribute="width" id="PDg-U1-81R"/>
+                                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="top" secondItem="Iao-v6-qgi" secondAttribute="top" id="ZNm-gL-Aco"/>
+                                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="1.5" id="aN1-ch-Dhe"/>
+                                                            <constraint firstItem="Iao-v6-qgi" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="top" constant="12" id="df8-fC-0XG"/>
+                                                            <constraint firstItem="Pe0-FD-37o" firstAttribute="height" secondItem="Iao-v6-qgi" secondAttribute="height" id="wgo-kU-efL"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="length">
-                                                                <integer key="value" value="3000"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="heightElevation" destination="Pe0-FD-37o" id="iny-Qc-Cjw"/>
+                                                            <outlet property="lengthElevation" destination="Iao-v6-qgi" id="MRq-fd-kor"/>
+                                                        </connections>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-FD-37o" customClass="ElevationHeightView" customModule="Bridges" customModuleProvider="target">
-                                                        <rect key="frame" x="231.5" y="20" width="100" height="100"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="height">
-                                                                <integer key="value" value="374"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View on Wikipedia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obL-J1-SAg">
+                                                        <rect key="frame" x="8" y="74" width="118" height="17"/>
+                                                        <gestureRecognizers/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.069498517888648248" green="0.23181677450878002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="yBz-iT-Uxr" appends="YES" id="06b-5M-FJu"/>
+                                                        </connections>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="Iao-v6-qgi" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="top" constant="20" id="B1t-Th-iIX"/>
-                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="top" secondItem="Iao-v6-qgi" secondAttribute="top" id="Bus-Hj-dzC"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Iao-v6-qgi" secondAttribute="bottom" constant="4" id="JRa-GL-JbV"/>
-                                                    <constraint firstItem="Iao-v6-qgi" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="0.5" constant="1" id="JUf-g2-GHf"/>
-                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="height" secondItem="Iao-v6-qgi" secondAttribute="height" id="cXM-6y-qR0"/>
-                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="centerX" secondItem="pnY-3v-W65" secondAttribute="centerX" multiplier="1.5" id="cjb-lx-RD5"/>
-                                                    <constraint firstItem="Pe0-FD-37o" firstAttribute="width" secondItem="Iao-v6-qgi" secondAttribute="width" id="vP8-7T-UkC"/>
+                                                    <constraint firstItem="obL-J1-SAg" firstAttribute="leading" secondItem="liH-9c-LpG" secondAttribute="leading" id="1nK-i1-z3N"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pnY-3v-W65" secondAttribute="trailing" id="8Xj-8w-iT2"/>
+                                                    <constraint firstItem="obL-J1-SAg" firstAttribute="top" secondItem="gVE-MO-sMe" secondAttribute="bottom" constant="8" id="Dwz-4y-aXu"/>
+                                                    <constraint firstItem="liH-9c-LpG" firstAttribute="top" secondItem="RK2-bh-djG" secondAttribute="top" constant="8" id="G27-cf-N7y"/>
+                                                    <constraint firstItem="pnY-3v-W65" firstAttribute="top" secondItem="obL-J1-SAg" secondAttribute="bottom" constant="13" id="PX6-hV-2Uy"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="liH-9c-LpG" secondAttribute="trailing" constant="10" id="Q6C-mb-Bgo"/>
+                                                    <constraint firstItem="gVE-MO-sMe" firstAttribute="top" secondItem="liH-9c-LpG" secondAttribute="bottom" constant="8" id="Qrd-pf-3LU"/>
+                                                    <constraint firstItem="liH-9c-LpG" firstAttribute="leading" secondItem="RK2-bh-djG" secondAttribute="leading" constant="8" id="XbQ-DW-oyV"/>
+                                                    <constraint firstItem="gVE-MO-sMe" firstAttribute="leading" secondItem="liH-9c-LpG" secondAttribute="leading" id="bcE-Be-COK"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="obL-J1-SAg" secondAttribute="trailing" constant="10" id="flU-dT-9gn"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gVE-MO-sMe" secondAttribute="trailing" constant="10" id="uvt-9P-wXF"/>
+                                                    <constraint firstItem="pnY-3v-W65" firstAttribute="leading" secondItem="RK2-bh-djG" secondAttribute="leading" id="zEN-0d-sDW"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outlet property="heightElevation" destination="Pe0-FD-37o" id="iny-Qc-Cjw"/>
-                                                    <outlet property="lengthElevation" destination="Iao-v6-qgi" id="MRq-fd-kor"/>
+                                                    <outlet property="elevationWrapper" destination="pnY-3v-W65" id="c3V-4I-CXU"/>
+                                                    <outlet property="nameLabel" destination="liH-9c-LpG" id="e2H-5M-6PH"/>
+                                                    <outlet property="overviewLabel" destination="gVE-MO-sMe" id="HNy-bL-Wco"/>
+                                                    <outlet property="wikiLabel" destination="obL-J1-SAg" id="Bc8-qK-8xY"/>
                                                 </connections>
                                             </view>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-4g-TUE">
-                                                <rect key="frame" x="0.0" y="242" width="375" height="259"/>
+                                                <rect key="frame" x="0.0" y="240" width="375" height="259"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="259" id="0vg-7w-S9M"/>
                                                 </constraints>
                                             </mapView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cC1-Xi-TBg">
-                                                <rect key="frame" x="9" y="551" width="113" height="113"/>
+                                                <rect key="frame" x="9" y="549" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="height" multiplier="1:1" id="A0k-U7-PHg"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-ic-Hsf">
-                                                <rect key="frame" x="131.5" y="551" width="113" height="113"/>
+                                                <rect key="frame" x="131.5" y="549" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GcC-sJ-ha0">
-                                                <rect key="frame" x="253" y="551" width="113" height="113"/>
+                                                <rect key="frame" x="253" y="549" width="113" height="113"/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="gVE-MO-sMe" firstAttribute="top" secondItem="liH-9c-LpG" secondAttribute="bottom" constant="8" id="1uf-XS-8tM"/>
+                                            <constraint firstAttribute="trailing" secondItem="RK2-bh-djG" secondAttribute="trailing" id="7Sv-LK-kue"/>
+                                            <constraint firstItem="RK2-bh-djG" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" id="7Zc-Ij-zRq"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="top" secondItem="cC1-Xi-TBg" secondAttribute="top" id="8mc-o6-flC"/>
                                             <constraint firstItem="Yob-4g-TUE" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" id="APD-LM-HV9"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="height" secondItem="cC1-Xi-TBg" secondAttribute="height" id="AkR-aA-Z3K"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="top" secondItem="Yob-4g-TUE" secondAttribute="bottom" constant="50" id="Gi7-RY-Mqf"/>
-                                            <constraint firstItem="liH-9c-LpG" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" constant="8" id="M7x-e6-8UA"/>
-                                            <constraint firstItem="liH-9c-LpG" firstAttribute="top" secondItem="3Ou-dI-NSv" secondAttribute="top" constant="8" id="Mgl-FF-HXt"/>
-                                            <constraint firstItem="pnY-3v-W65" firstAttribute="leading" secondItem="3Ou-dI-NSv" secondAttribute="leading" id="Pcp-5B-jan"/>
-                                            <constraint firstAttribute="trailing" secondItem="gVE-MO-sMe" secondAttribute="trailing" constant="8" id="Rh8-bb-qsC"/>
                                             <constraint firstAttribute="bottom" secondItem="cC1-Xi-TBg" secondAttribute="bottom" constant="50" id="Syk-Xm-vuB"/>
-                                            <constraint firstItem="obL-J1-SAg" firstAttribute="leading" secondItem="gVE-MO-sMe" secondAttribute="leading" id="TX5-Tr-O8m"/>
-                                            <constraint firstItem="obL-J1-SAg" firstAttribute="top" secondItem="gVE-MO-sMe" secondAttribute="bottom" constant="9" id="VNf-ob-egn"/>
-                                            <constraint firstItem="pnY-3v-W65" firstAttribute="top" secondItem="obL-J1-SAg" secondAttribute="bottom" constant="8" id="Z2e-Mi-3Il"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="width" id="eQ2-lu-MoT"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="0.35" id="ezd-r6-932"/>
                                             <constraint firstAttribute="trailing" secondItem="Yob-4g-TUE" secondAttribute="trailing" id="fRa-5X-nxB"/>
                                             <constraint firstItem="cC1-Xi-TBg" firstAttribute="width" secondItem="3Ou-dI-NSv" secondAttribute="width" multiplier="0.3" id="gzh-lX-H6b"/>
-                                            <constraint firstItem="Yob-4g-TUE" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="bottom" constant="18" id="hqr-Eu-T7r"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="top" secondItem="cC1-Xi-TBg" secondAttribute="top" id="j9L-YT-5Km"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" id="kX9-cb-er2"/>
-                                            <constraint firstAttribute="trailing" secondItem="pnY-3v-W65" secondAttribute="trailing" id="llD-Fe-THK"/>
-                                            <constraint firstAttribute="trailing" secondItem="liH-9c-LpG" secondAttribute="trailing" constant="8" id="mDA-oD-ElJ"/>
-                                            <constraint firstItem="gVE-MO-sMe" firstAttribute="leading" secondItem="liH-9c-LpG" secondAttribute="leading" id="n8q-qh-cN7"/>
+                                            <constraint firstItem="Yob-4g-TUE" firstAttribute="top" secondItem="RK2-bh-djG" secondAttribute="bottom" id="oZ2-A8-mUD"/>
+                                            <constraint firstItem="RK2-bh-djG" firstAttribute="top" secondItem="3Ou-dI-NSv" secondAttribute="top" id="sTS-GQ-xbd"/>
                                             <constraint firstItem="GcC-sJ-ha0" firstAttribute="centerX" secondItem="3Ou-dI-NSv" secondAttribute="centerX" multiplier="1.65" id="sXN-ps-swA"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="height" secondItem="cC1-Xi-TBg" secondAttribute="height" id="tkA-Xk-GEg"/>
+                                            <constraint firstItem="Yob-4g-TUE" firstAttribute="top" secondItem="pnY-3v-W65" secondAttribute="bottom" constant="12" id="xQA-SR-Pfv"/>
                                             <constraint firstItem="8tg-ic-Hsf" firstAttribute="width" secondItem="cC1-Xi-TBg" secondAttribute="width" id="xbh-q1-ILS"/>
                                         </constraints>
                                     </view>
@@ -279,9 +298,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="789"/>
                     <connections>
-                        <outlet property="bridgeNameLabel" destination="liH-9c-LpG" id="c0d-8T-qqT"/>
-                        <outlet property="bridgeOverviewLabel" destination="gVE-MO-sMe" id="zaa-Nl-TSf"/>
-                        <outlet property="elevationWrapper" destination="pnY-3v-W65" id="jVn-9b-CS2"/>
+                        <outlet property="detailWrapper" destination="RK2-bh-djG" id="f6t-WM-8t3"/>
                         <outlet property="favoriteButton" destination="MsC-ah-2DF" id="jQN-vN-vdg"/>
                         <outlet property="mapView" destination="Yob-4g-TUE" id="fpJ-hK-CwR"/>
                         <outletCollection property="imageCollection" destination="cC1-Xi-TBg" collectionClass="NSMutableArray" id="hGD-wd-8Xj"/>
@@ -293,7 +310,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovP-i2-vEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer">
                     <connections>
-                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="faS-he-9yj"/>
+                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="30W-Ne-J9I"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -339,7 +356,9 @@
             <objects>
                 <navigationController id="PJX-LF-68i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bridges" image="bridge" id="E9U-5a-xad"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B40-1b-Mon">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B40-1b-Mon">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -356,7 +375,9 @@
             <objects>
                 <navigationController id="Yun-EP-xDb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="gDL-uT-rox"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Of-hV-8yO">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Of-hV-8yO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

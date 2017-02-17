@@ -31,7 +31,7 @@ class ImageTransitionFromDetailToThumb: NSObject, UIViewControllerAnimatedTransi
     mainImageView?.isHidden = true
     
     let endImageView = toVC.imageCollection.filter { (imageView) -> Bool in
-      return imageView.tag == toVC.currentIndex
+      return imageView.tag == toVC.currentImageIndex
     }.first
     
     toVC.view.frame = transitionContext.finalFrame(for: toVC)
