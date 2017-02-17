@@ -11,9 +11,7 @@ import UIKit
  * **Accessibility Inspector - Audit**
     * [Labels, Hints and Traits](Labels,%20Hints%20and%20Traits)
  * **Accessibility Inspector - Inspection**
-    * Elevation views missing
-      * turn length/height into accessible elements
-      * wrap length/height elevations into accessibility container, give one main accessibility label
+    * [UIAccessibilityContainer](UIAccessibilityContainer)
     * Wikipeda has no button trait
     * Slideshow images are invisible
     * Better labels for uitableviewcells

@@ -11,5 +11,6 @@
         <page name='VoiceOver Rotor'/>
         <page name='Custom Actions'/>
         <page name='Labels, Hints and Traits'/>
+        <page name='UIAccessibilityContainer'/>
     </pages>
 </playground>
