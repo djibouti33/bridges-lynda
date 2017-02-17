@@ -9,7 +9,7 @@ import UIKit
     * [Dynamic Type - UITableViewCell](Dynamic%20Type%20-%20UITableViewCell)
     * [Bold Fonts & Darker Colors](Bold%20Fonts%20&%20Darker%20Colors)
  * **Accessibility Inspector - Audit**
-    * favorite image needs better label
+    * [Labels, Hints and Traits](Labels,%20Hints%20and%20Traits)
  * **Accessibility Inspector - Inspection**
     * Elevation views missing
       * turn length/height into accessible elements
