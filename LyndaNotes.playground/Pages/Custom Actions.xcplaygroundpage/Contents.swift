@@ -40,18 +40,7 @@
  * callout(Demo):
    * Demo Magic Tap. Point out how it can be done anywhere on the screen, making it a lot easier for the user so they don't have to navigate back and forth
    * Point out how it's difficult for the user to know if the magic tap took or not
-   * For that we'll post a custom notification
- */
-
-/*:
- ## BridgeDetailViewController.swift
- ### add to #accessibilityPerformMagicTap()
-
-    let action = favoriteButton.isSelected ? "added to" : "removed from"
-    if let name = bridge?.name {
-      UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, "\(name) \(action) favorites.")
-    }
-
+   * For that we'll post a custom notification, and we'll learn how to do that in another video
  */
 
 /*:

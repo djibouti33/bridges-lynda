@@ -15,5 +15,6 @@
         <page name='UIAccessibilityContainer'/>
         <page name='isAccessibilityElement'/>
         <page name='UIAccessibility Informal Protocol'/>
+        <page name='Notifications'/>
     </pages>
 </playground>
