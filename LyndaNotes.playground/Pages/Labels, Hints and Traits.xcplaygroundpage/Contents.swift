@@ -64,7 +64,31 @@
 /*:
   * callout(Bridges):
     * show how voiceover stays the same
-    * talk about how in a later video, we'll use traits to make an element reachable to switch users
+    * point out wikipedia label, and how VO doesn't tell the user that this label can be tapped
+    * point out how it's configured as a UILabel with a tap gesture recognizer, but VO isn't aware of that, so we need to tell it to treat it like a button
+    * also go into SwitchControl mode and point out how the Switch Control focus ring completely misses the element alltogether.
+    * that's because a switch control only highlights controls that can be interacted with. most likely switch control users can see fine; they just have a difficult time touching the screen. without a button trait, they'd never be able to visit the wikipedia entry.
+ 
+ ## DetailWrapper.swift
+ ### new method
+ 
+    override func awakeFromNib() {
+      wikiLabel.accessibilityTraits |= UIAccessibilityTraitButton
+    }
+ 
+  * callout(Bridges):
+      * demo how voiceover adds the button prompt
+      * demo how switch control can now successfully find it
+      * switching gears, go to indexviewcontroller and point out how our labels are read backwards. the title should be read first, then the overview.
+ 
+ ## IndexTableViewCell.swift
+ ### bottom of bridge#didSet{}
+ 
+    if let name = bridge.name, let overview = bridge.overview {
+      self.accessibilityLabel = "\(name), \(overview)"
+    }
+
+
  */
 
 //: [Next](@next)

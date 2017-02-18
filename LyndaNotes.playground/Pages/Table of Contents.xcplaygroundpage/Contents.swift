@@ -12,9 +12,7 @@ import UIKit
     * [Labels, Hints and Traits](Labels,%20Hints%20and%20Traits)
  * **Accessibility Inspector - Inspection**
     * [UIAccessibilityContainer](UIAccessibilityContainer)
-    * Wikipeda has no button trait
     * Slideshow images are invisible
-    * Better labels for uitableviewcells
  * **User Testing**
     * Adjusting Focus Ring
       * focus ring on header when detail appears
@@ -28,18 +26,9 @@ import UIKit
  
  
 
- * Accessibility Labels
- * Accessibility Traits
+
  * Accessibility Value
- * Accessibility Frame
- * Accessibility Hint
- * isAccessibilityElement
- *
  * accessibilityViewIsModal
  * UIAccessibilityIsVoiceOverRunning()
- * UIAccessibilityElements, UIAccessibilityContainer, UIAccessibilityContainer Protocol
-    * elementCount
-    * indexOfElement
-    * elementsAtIndex
  
  */
