@@ -308,7 +308,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovP-i2-vEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer"/>
+                <tapGestureRecognizer id="yBz-iT-Uxr" userLabel="Wikipedia Tap Recognizer">
+                    <connections>
+                        <action selector="onWikipediaTap:" destination="rvD-Sd-ov4" id="bQv-bK-EJi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2709.5999999999999" y="-276.61169415292358"/>
         </scene>
