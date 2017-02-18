@@ -2,7 +2,7 @@
 
 /*:
  
- # Labels, Hints and Traits
+ # Labels, Hints
  
  **GOALS**
   * Introduce students to accessibility labels, hints, and traits
@@ -79,6 +79,16 @@
   * callout(Bridges):
       * demo how voiceover adds the button prompt
       * demo how switch control can now successfully find it
+      * now let's take a look at the images thumbnails. if you remember, VoiceOver was simply reading off their file names.
+      * ideally we'd have information about each image to use as a label. unfortunately we don't, but we can still provide helpful information
+ 
+  ## BridgeDetailViewController.swift
+  ### configureImageViews()
+ 
+    imageView.accessibilityLabel = "Photo \(index + 1) of \(imageCollection.count)"
+
+  * callout(Bridges):
+      * show how images now have helpful accessibility labels
       * switching gears, go to indexviewcontroller and point out how our labels are read backwards. the title should be read first, then the overview.
  
  ## IndexTableViewCell.swift

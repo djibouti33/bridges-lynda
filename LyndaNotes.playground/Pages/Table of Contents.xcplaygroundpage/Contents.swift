@@ -9,10 +9,12 @@ import UIKit
     * [Dynamic Type - UITableViewCell](Dynamic%20Type%20-%20UITableViewCell)
     * [Bold Fonts & Darker Colors](Bold%20Fonts%20&%20Darker%20Colors)
  * **Accessibility Inspector - Audit**
-    * [Labels, Hints and Traits](Labels,%20Hints%20and%20Traits)
+    * [isAccessibilityElement](isAccessibilityElement)
+    * [Labels and Hints](Labels%20and%20Hints)
+    * [Traits](Traits)
  * **Accessibility Inspector - Inspection**
     * [UIAccessibilityContainer](UIAccessibilityContainer)
-    * Slideshow images are invisible
+    * [UIAccessibility Informal Protocol](UIAccessibility%20Informal%20Protocol)
  * **User Testing**
     * Adjusting Focus Ring
       * focus ring on header when detail appears
@@ -24,7 +26,11 @@ import UIKit
  * [Guided Access](Guided%20Access)
  
  
- 
+ * start with isAccessibilityElement
+ * explain child/parent relationships
+ * set isaccessibile on imageviews
+ * explain how there's a setting in Accessibility > VoiceOver about whether a user wants to ignore images, so we should let them decide
+ * also explain how it helps other accessible technologies like switch control
 
 
  * Accessibility Value
