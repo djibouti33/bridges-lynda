@@ -3,7 +3,7 @@
 //  Bridges
 //
 //  Created by Kevin Favro on 1/31/17.
-//  Copyright © 2017 Lynda.com. All rights reserved.
+//  Copyright © 2017 LinkedIn. All rights reserved.
 //
 
 import Foundation
