@@ -62,9 +62,9 @@ import UIKit
     let textStyle = NSMutableParagraphStyle()
     textStyle.alignment = .center
 
-    let robotoMono = UIFont(name: "RobotoMono-Regular", size: 15)
+    let calynda = UIFont(name: "Calynda", size: 15)
     
-    let textFontAttributes = [NSFontAttributeName: robotoMono!, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
+    let textFontAttributes = [NSFontAttributeName: calynda!, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
     
     let textTextHeight: CGFloat = textContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).size.height
     context!.saveGState()
