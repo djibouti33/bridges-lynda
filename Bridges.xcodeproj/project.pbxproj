@@ -104,11 +104,11 @@
 				0A51A8991E42B8FC0079E983 /* ElevationHeightView.swift */,
 				0A51A8971E42A9990079E983 /* ElevationLengthView.swift */,
 				0A8EA4571E553F0B0037BE65 /* ElevationWrapper.swift */,
-				0ADC259C1E4A1BC6008C9ABA /* Extra Files */,
 				0ADC258F1E4914F8008C9ABA /* ImageDetailViewController.swift */,
 				0ADC25951E494DFE008C9ABA /* ImageTransitionFromDetailToThumb.swift */,
 				0ADC25911E491D0A008C9ABA /* ImageTransitionFromThumbToDetail.swift */,
 				0AD31F191E4129DD0097133F /* IndexTableViewCell.swift */,
+				0ADC259C1E4A1BC6008C9ABA /* Extra Files */,
 				0AD31EBD1E40F3CF0097133F /* Main.storyboard */,
 			);
 			path = Bridges;
