@@ -62,7 +62,8 @@ import UIKit
     let textStyle = NSMutableParagraphStyle()
     textStyle.alignment = .center
 
-    let calynda = UIFont(name: "Calynda", size: 15)
+    let pointSize = UIFont.preferredFont(forTextStyle: .caption1).pointSize
+    let calynda = UIFont(name: "Calynda", size: pointSize)
     
     let textFontAttributes = [NSFontAttributeName: calynda!, NSForegroundColorAttributeName: UIColor.black, NSParagraphStyleAttributeName: textStyle]
     

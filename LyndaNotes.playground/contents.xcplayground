@@ -3,9 +3,10 @@
     <pages>
         <page name='Table of Contents'/>
         <page name='Dynamic Type'/>
+        <page name='Dynamic Type - Custom Fonts'/>
         <page name='Dynamic Type - UITableViewCell'/>
-        <page name='Reduce Motion'/>
         <page name='Reduce Transparency'/>
+        <page name='Reduce Motion'/>
         <page name='Bold Fonts &amp; Darker Colors'/>
         <page name='Guided Access'/>
         <page name='VoiceOver Rotor'/>

@@ -30,5 +30,18 @@ class IndexTableViewCell: UITableViewCell {
     textBackdrop.layer.borderColor = UIColor.black.cgColor
     textBackdrop.layer.borderWidth = 4
     textBackdrop.layer.cornerRadius = 15
+    
+    
+    
+    if UIAccessibilityIsReduceTransparencyEnabled() {
+//      textBackdrop.alpha = 1
+      textBackdrop.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+//      textBackdrop.backgroundColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+    }
+  }
+  
+  override func prepareForReuse() {
+    bridgeNameLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+    bridgeOverviewLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
   }
 }

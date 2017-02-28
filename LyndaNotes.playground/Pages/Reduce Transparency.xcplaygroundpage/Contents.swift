@@ -1,6 +1,11 @@
 //: [Previous](@previous)
 
 /*:
+ 
+  In our app, our cells use a transparent background to overlay text on top of the background image. This is a nice effect, but for some users, this design can be difficult to read and could even be ilegible. Fortunatley, there's a setting user's can adjust to request interfaces to reduce the use of transparency. This setting can be toggled by going to Settings > General > Accessibility > Increase Contrast, and enabling the Reduce Transparency switch.
+ 
+ We'll do this my working through common pitfalls when working with colors and transparency.
+ 
   * callout(Demo: Settings App, Bridges):
     * show how our app uses transparency on tableviewcells.
     * explain how some users have difficulty seeing items overlaid on each other
@@ -22,7 +27,7 @@
     * there's two ways to achieve transparency. by setting a view's transparency, and by adding alpha when declaring a color
     * if we had set the alpha on the textBackdrop view, then everything inside that view would also be affected.
     * instead, we only want the surrounding box to have reduced alpha, so we acheieved this by selecting a color and turning down it's opacity
-    * if you're trying to reduce transparency in your app and it's not working, double check how you or another designer configured the transparency
+    * if you're trying to reduce transparency in your app and it's not working, double check how you or another developer configured the transparency
     * ok, now that we know we're setting the alpha channel through a color, we'll change our code
  */
 
@@ -79,7 +84,7 @@
 
   * note:
     * ok, this will work the first time, but after that, since we're hard coding alpha 1, our cell will use that value each and every time, and our app won't respond correctly when users toggle this setting
-    * instead of hardcoding these values, we'll want to store the original color and alpha settings when the cell is first created, and then toggle between our designer and our user's alpha preferences. this will also allow us to make changes to the backgorund color in our storyboard file, and have them automatically picked up here in our code without making any other adjustments
+    * instead of hardcoding these values, when the cell is first created, we'll want to capture our designer's original color and alpha settings. we'll then be able to toggle between the original alpha value or 1 if the user has enabled the reduce transparency setting. capturing the original color components will also allow us to make changes to the backgorund color in our storyboard file, and have them automatically picked up here in our code without making any other adjustments
 
  ### create new properties
 

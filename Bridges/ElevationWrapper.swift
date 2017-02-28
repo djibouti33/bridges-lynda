@@ -26,6 +26,9 @@ class ElevationWrapper: UIView {
 
   override func layoutSubviews() {
     super.layoutSubviews()
+    
+    lengthElevation.setNeedsDisplay()
+    heightElevation.setNeedsDisplay()
 
     UIView.animate(withDuration: 0.5, animations: {
       self.lengthElevation.transform = CGAffineTransform(scaleX: 1.5,y: 1.5)

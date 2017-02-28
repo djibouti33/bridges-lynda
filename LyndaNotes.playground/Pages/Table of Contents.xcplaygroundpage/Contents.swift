@@ -3,10 +3,11 @@ import UIKit
 /*:
  # Table of Contents
  * **Accessibility Inspector - Settings**
+    * [Dynamic Type](Dynamic%20Type)
+    * [Dynamic Type - Custom Fonts](Dynamic%20Type%20-%20Custom%20Fonts)
+    * [Dynamic Type - UITableViewCell](Dynamic%20Type%20-%20UITableViewCell)
     * [Reduce Transparency](Reduce%20Transparency)
     * [Reduce Motion](Reduce%20Motion)
-    * [Dynamic Type](Dynamic%20Type)
-    * [Dynamic Type - UITableViewCell](Dynamic%20Type%20-%20UITableViewCell)
     * [Bold Fonts & Darker Colors](Bold%20Fonts%20&%20Darker%20Colors)
  * **Accessibility Inspector - Audit**
     * [isAccessibilityElement](isAccessibilityElement)

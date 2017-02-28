@@ -29,6 +29,8 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
     configureMapView()
     configureImageViews()
     configureFavoriteButton()
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(userTextSizeDidChange), name: .UIContentSizeCategoryDidChange, object: nil)
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -119,5 +121,12 @@ class BridgeDetailViewController: UIViewController, MKMapViewDelegate, UINavigat
     } else {
       favoriteButton.isSelected = false
     }
+  }
+  
+  @objc private func userTextSizeDidChange() {
+    detailWrapper.setNeedsLayout()
+    detailWrapper.layoutIfNeeded()
+    
+    
   }
 }

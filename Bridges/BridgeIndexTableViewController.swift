@@ -16,6 +16,11 @@ class BridgeIndexTableViewController: UITableViewController {
     if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
       bridges = appDelegate.bridges
     }
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(userTextSizeDidChange), name: .UIContentSizeCategoryDidChange, object: nil)
+    
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 105
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -38,10 +43,6 @@ class BridgeIndexTableViewController: UITableViewController {
     cell.bridge = bridges[indexPath.row]
 
     return cell
-  }
-  
-  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 105
   }
 
   override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,5 +83,11 @@ class BridgeIndexTableViewController: UITableViewController {
     {
         bridgeDetail.bridge = bridges[index]
     }
+  }
+    
+  // MARK: - Private Helpers
+  
+  func userTextSizeDidChange() {
+    tableView.reloadData()
   }
 }

@@ -23,4 +23,10 @@ class DetailWrapper: UIView {
       }
     }
   }
+  
+  override func layoutSubviews() {
+    nameLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+    overviewLabel.font = UIFont.preferredFont(forTextStyle: .body)
+    wikiLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
+  }
 }
