@@ -17,18 +17,14 @@
     * Show the list of traits in Interface Builder
     * Now I'll show you how to recreate the traits that iOS is doing for us automatically
  
- You might have noticed that VoiceOver added the words "button" and "selected" when speaking our favorites button. Along with the accessibilityLabel and accessibilityHint, elements can have accessibilityTraits associated with them to give assistive technologies more information about an element's purpose. We'll be looking at accessibilityTraits in the next video.
  
- 
- 
- 
-  In addition to setting accessibilityLabels and accessibilityHints, we can also use accessibilityTraits to describe the behavior of  user interface elements. We were briefly introduced to traits when we worked with the favorites button, and heard VoiceOver announce the element as a button, and that it was selected.
+  In previous videos, you might have noticed when VoiceOver announced our favorites button, it added the words "button" and "selected". Let's listen again. We didn't add those, so where did those come from? In addition to setting accessibilityLabels and accessibilityHints, we can also use accessibilityTraits to describe the behavior of user interface elements.
  
   Some traits characterize an element by identifying its behavior with the behavior of a particular type of object, like a button or an image. Other traits characterize an element by describing a specific behavior the element can exhibit, such as the ability to play a sound. Let's take a look at the different traits that are available to us.
  
  In Xcode, open up our Main.storyboard file, click on the Bridge Scene to open our detail scene, and select one of the images on the bottom. Over on the right, in the identity inspector, go to the Accessibiity section, and you can see all 16 traits available to us. As you can see, multiple traits can be combined.
  
- Standard UIKit controls, such as a button or a text field, provide default content in the traits attribute. If you use only standard UIKit controls in your application and don't modify their behavior in any way, you won't have to make any adjustements to the traits attribute.
+ Standard UIKit controls, such as a button or a text field, provide default values in the traits attribute. If you use only standard UIKit controls in your application and don't modify their behavior in any way, you won't have to make any adjustements to the traits attribute.
  
  Our favorites button is a standard UIButton, which is why VoiceOver automatically announced it as a button and selected. As a simple exercise, let's go into the code and recreate these traits that UIKit had set by default.
 

@@ -74,6 +74,8 @@
         favoriteButton.isSelected = false
       }
     }
+ 
+ great, after the label is read, VoiceOver pauses, and then reads the hint. the accessibility hint give a VoiceOver user a little more information about what will happen if they activate the favorites button.
  */
 
 /*:
