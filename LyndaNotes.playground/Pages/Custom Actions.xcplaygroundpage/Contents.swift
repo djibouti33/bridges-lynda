@@ -80,7 +80,7 @@
  
  VoiceOver ships with a powerful feature called the Rotor, which allows users to change how VoiceOver works. Users can change the VoiceOver volume or speaking rate, move from one item to the next on the screen, and even change the way you type.
  
- To activate the rotor, you first have to make sure VoiceOver is enabled. To use the rotor, rotate two fingers on the screen as if you're turning a physical dial. VoiceOver will say the first rotor option. Keep rotating your fingers to hear more options, and lift your fingers to choose an option. After choosing an option, flick your finger up or down on the screen to use it.
+ To activate the rotor, you first have to make sure VoiceOver is enabled. To activate the rotor, rotate two fingers on the screen as if you're turning a physical dial. VoiceOver will say the first rotor option. Keep rotating your fingers to hear more options, and lift your fingers to choose an option. After choosing an option, flick your finger up or down on the screen to use it.
  
  It's important to note that the Rotor is context sensitive. Your rotor options will depend on which element has focus when you activate the rotor.
  
